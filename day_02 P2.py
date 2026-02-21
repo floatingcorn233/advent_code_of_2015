@@ -1,5 +1,5 @@
-f=open("day_02 txt","r")
-route=f.read()
+with open("day_02 txt","r") as f:
+    route=f.read()
 santa_route=route[::2]
 robo_route=route[1::2]
 

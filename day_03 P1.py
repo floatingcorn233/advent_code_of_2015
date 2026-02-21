@@ -2,10 +2,10 @@ import pandas as pd
 
 firehazard = pd.DataFrame(0, index=range(1000), columns=range(1000))
 
-f = open("day_03 txt", "r")
-instruction = f.read()
+with open("day_03 txt", "r") as f:
+    instruction = f.read()
 
-juzheng = instruction.split("\n")
+juzheng = instruction.splitlines()
 
 def magic(line):
     a = line.split(" ")
@@ -20,9 +20,7 @@ def magic(line):
     return x1, y1, x2, y2
 
 for line in juzheng:
-
     x1, y1, x2, y2 = magic(line)
-
     if "turn on" in line:
         firehazard.loc[x1:x2, y1:y2] = 1
     elif "turn off" in line:

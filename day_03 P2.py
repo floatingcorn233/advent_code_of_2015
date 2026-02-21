@@ -2,10 +2,10 @@ import pandas as pd
 
 firehazard = pd.DataFrame(0, index=range(1000), columns=range(1000))
 
-f = open("day_03 txt", "r")
-instruction = f.read()
+with open("day_03 txt", "r") as f:
+    instruction = f.read()
 
-juzheng = instruction.split("\n")
+juzheng = instruction.splitlines()
 
 def magic(line):
     a = line.split(" ")
