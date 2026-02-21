@@ -28,11 +28,10 @@ for line in juzheng:
 
     if "turn on" in line:
         firehazard.loc[y1:y2, x1:x2] = firehazard.loc[y1:y2, x1:x2] + 1
-
     elif "turn off" in line:
         firehazard.loc[y1:y2, x1:x2] = firehazard.loc[y1:y2, x1:x2] - 1
         firehazard[firehazard < 0] = 0
-
     elif "toggle" in line:
         firehazard.loc[y1:y2, x1:x2] = firehazard.loc[y1:y2, x1:x2] + 2
+
 print(int(firehazard.to_numpy().sum()))
