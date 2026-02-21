@@ -16,5 +16,4 @@ for direction in route:
         y=y-1
     location={(x,y)}
     locations.add((x,y))
-
 print(len(locations))

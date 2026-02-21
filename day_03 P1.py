@@ -27,5 +27,4 @@ for line in juzheng:
         firehazard.loc[x1:x2, y1:y2] = 0
     elif "toggle" in line:
         firehazard.loc[x1:x2, y1:y2] = 1 - firehazard.loc[x1:x2, y1:y2]
-
 print(int(firehazard.to_numpy().sum()))

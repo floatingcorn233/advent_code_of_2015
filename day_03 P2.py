@@ -11,15 +11,12 @@ def magic(line):
     a = line.split(" ")
     start = a[-3]
     end = a[-1]
-
     startpoint = start.split(",")
     endpoint = end.split(",")
-
     x1 = int(startpoint[0])
     y1 = int(startpoint[1])
     x2 = int(endpoint[0])
     y2 = int(endpoint[1])
-
     return x1, y1, x2, y2
 
 for line in juzheng:

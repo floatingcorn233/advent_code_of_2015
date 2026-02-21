@@ -2,7 +2,6 @@ with open("day_01 txt","r") as f:
     txt=f.read()
 layer=0
 demon=0
-
 for i,kh in enumerate(txt):
     if kh=='(':
         layer+=1

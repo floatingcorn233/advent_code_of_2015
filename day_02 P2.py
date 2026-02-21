@@ -22,5 +22,4 @@ def giftsender(route):
 deliver1=giftsender(santa_route)
 deliver2=giftsender(robo_route)
 alldeliver=deliver1|deliver2
-
 print(len(alldeliver))
