@@ -7,6 +7,5 @@ for kh in txt:
         layer+=1
     else:
         layer-=1
-
 print(layer)
 
